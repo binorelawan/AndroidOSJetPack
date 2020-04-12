@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listFragment">
+
+<!--List Fragment    -->
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="relawan.androidosjetpack.view.list.ListFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+<!--Grid Fragment    -->
+    <fragment
+        android:id="@+id/gridFragment"
+        android:name="relawan.androidosjetpack.view.grid.GridFragment"
+        android:label="GridFragment"
+        tools:layout="@layout/fragment_grid" >
+        <action
+            android:id="@+id/action_gridFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+<!--Card Fragment    -->
+    <fragment
+        android:id="@+id/cardFragment"
+        android:name="relawan.androidosjetpack.view.card.CardFragment"
+        android:label="CardFragment"
+        tools:layout="@layout/fragment_card" >
+        <action
+            android:id="@+id/action_cardFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+<!--Detail Fragment    -->
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="relawan.androidosjetpack.view.detail.DetailFragment"
+        android:label="DetailFragment" >
+        <argument
+            android:name="list"
+            app:argType="relawan.androidosjetpack.model.AndroidOs"
+            app:nullable="true"/>
+        <argument
+            android:name="grid"
+            app:argType="relawan.androidosjetpack.model.AndroidOs"
+            app:nullable="true"/>
+        <argument
+            android:name="card"
+            app:argType="relawan.androidosjetpack.model.AndroidOs"
+            app:nullable="true"/>
+    </fragment>
+
+</navigation>

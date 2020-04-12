@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">AndroidOSJetPack</string>
+
+    <!--AndroidOsData.java-->
+    <string name="cupcake">Cupcake</string>
+    <string name="oscupkake">Android OS 1.5</string>
+    <string name="detailcupcake">Pada 27 April 2009, Android 1.5 dirilis, menggunakan kernel Linux 2.6.27.
+		Versi ini adalah rilis pertama yang secara resmi menggunakan nama kode berdasarkan nama-nama makanan pencuci mulut ("Cupcake"),
+		nama yang kemudian digunakan untuk semua versi rilis selanjutnya.</string>
+
+    <string name="donut">Donut</string>
+    <string name="osdonut">Android OS 1.6</string>
+    <string name="detaildonut">Pada 15 September 2009, SDK Android 1.6 dinamai "Donut" dirilis, berdasarkan kernel Linux 2.6.29.</string>
+
+    <string name="eclair">Eclair</string>
+    <string name="oseclair">Android OS 2.0</string>
+    <string name="detaileclair">Pada 26 Oktober 2009, SDK Android 2.0 – dinamai "Eclair" dirilis, berbasis kernel Linux 2.6.29.</string>
+
+    <string name="froyo">Froyo</string>
+    <string name="osfroyo">Android OS 2.2</string>
+    <string name="detailfroyo">Pada 20 Mei 2010, SDK Android 2.2 (Froyo, singkatan untuk frozen yogurt) dirilis, yang berbasis kernel Linux 2.6.32.</string>
+
+    <string name="gingerbread">Gingerbread</string>
+    <string name="osgingerbread">Android OS 2.3</string>
+    <string name="detailgingerbread">Pada tanggal 6 Desember 2010, SDK Android 2.3 (Gingerbread) dirilis, berbasis kernel Linux 2.6.35.</string>
+
+    <string name="honeycomb">Honeycomb</string>
+    <string name="oshoneycomb">Android OS 3.0</string>
+    <string name="detailhoneycomb">Pada 22 Februari 2011, SDK Android 3.0 (Honeycomb) pembaruan pertama Android yang ditujukan hanya untuk komputer tablet dirilis, berdasarkan kernel Linux 2.6.36. Perangkat pertama yang menggunakan versi ini adalah tablet Motorola Xoom, yang dirilis pada 24 Februari 2011.</string>
+
+    <string name="icecreamsandwich">Ice Cream Sandwich</string>
+    <string name="osicecreamsandwich">Android OS 4.0</string>
+    <string name="detailicecreamsandwich">SDK Android 4.0.1 (Ice Cream Sandwich), berdasarkan kernel Linux 3.0.1, dirilis pada 19 Oktober 2011. Petinggi Google, Gabe Cohen, menyatakan bahwa Android 4.0 "secara teoritis kompatibel" dengan perangkat Android 2.3x yang diproduksi pada saat itu.</string>
+
+    <string name="jellybean">Jelly Bean</string>
+    <string name="osjellybean">Android OS 4.1</string>
+    <string name="detailjellybean">Google mengumumkan Android 4.1 (Jelly Bean) dalam konferensi Google I/O pada tanggal 27 Juni 2012. Berdasarkan kernel Linux 3.0.31, Jelly Bean adalah pembaruan penting yang bertujuan untuk meningkatkan fungsi dan kinerja antarmuka pengguna (UI).</string>
+
+    <string name="kitkat">KitKat</string>
+    <string name="oskitkat">Android OS 4.4</string>
+    <string name="detailkitkat">Google mengumumkan Android 4.4 KitKat (dinamai dengan izin dari Nestlé dan Hershey) pada 3 September 2013, dengan tanggal rilis 31 Oktober 2013.</string>
+
+    <string name="lollipop">Lollipop</string>
+    <string name="oslollipop">Android OS 5.0</string>
+    <string name="detaillollipop">Android 5.0 pertama kali diperkenalkan di bawah codename "Android L" pada 25 Juni 2014 selama presentasi keynote pada konferensi Google I/O.</string>
+
+    <string name="marshmallow">Marshmallow</string>
+    <string name="osmarshmallow">Android OS 6.0</string>
+    <string name="detailmarshmallow">Android 6.0 atau disebut dengan "Marshmallow" adalah versi dari sistem operasi mobile Android. Pertama kali diperkenalkan Mei 2015 di bawah codename "Android M", secara resmi dirilis pada bulan Oktober 2015.</string>
+
+    <string name="nougat">Nougat</string>
+    <string name="osnougat">Android OS 7.0</string>
+    <string name="detailnougat">Android Nougat merupakan generasi penerus dari versi sebelumnya yaitu Marshmallow yang di umumkan pada tanggal 1 Juli 2016 dan pertama kali di luncurkan untuk penggunaan publik pada 23 Agustus 2016.</string>
+
+    <string name="oreo">oreo</string>
+    <string name="osoreo">Android OS 8.0</string>
+    <string name="detailoreo">Android O atau dikenal Android Oreo secara resmi diperkenalkan oleh Google pada tanggal 22 Agustus 2017 yang lalu. Nama "Oreo" sendiri sudah terendus sejak Android O pertama kali diperkenalkan di ajang Google I/O 2017 pada Mei 2017 lalu.</string>
+
+    <string name="pie">Pie</string>
+    <string name="ospie">Android OS 9.0</string>
+    <string name="detailpie">Android Pie 9.0 adalah sistem operasi Android terbaru yang baru diluncurkan pada tahun 2018. Setelah sempat diberi julukan Android P, akhirnya Google merilis nama resmi sistem terbaru Android dengan nama "Pie."</string>
+
+    <!--Menu_main.menu-->
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="cardview">CardView</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
