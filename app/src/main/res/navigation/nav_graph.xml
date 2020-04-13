@@ -43,17 +43,16 @@
         android:name="relawan.androidosjetpack.view.detail.DetailFragment"
         android:label="DetailFragment" >
         <argument
-            android:name="list"
-            app:argType="relawan.androidosjetpack.model.AndroidOs"
-            app:nullable="true"/>
-        <argument
-            android:name="grid"
-            app:argType="relawan.androidosjetpack.model.AndroidOs"
-            app:nullable="true"/>
-        <argument
-            android:name="card"
-            app:argType="relawan.androidosjetpack.model.AndroidOs"
-            app:nullable="true"/>
+            android:name="android"
+            app:argType="relawan.androidosjetpack.model.AndroidOs"/>
+<!--        <argument-->
+<!--            android:name="grid"-->
+<!--            app:argType="relawan.androidosjetpack.model.AndroidOs"-->
+<!--            app:nullable="true"/>-->
+<!--        <argument-->
+<!--            android:name="card"-->
+<!--            app:argType="relawan.androidosjetpack.model.AndroidOs"-->
+<!--            app:nullable="true"/>-->
     </fragment>
 
 </navigation>

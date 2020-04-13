@@ -24,11 +24,10 @@ class DetailFragment : Fragment() {
         // Inflate the layout for this fragment
         val binding = FragmentDetailBinding.inflate(inflater)
 
-        val list = arguments?.let { DetailFragmentArgs.fromBundle(it).list }
-        val grid = arguments?.let { DetailFragmentArgs.fromBundle(it).grid }
-        val card = arguments?.let { DetailFragmentArgs.fromBundle(it).card }
+        val androidOs = arguments?.let { DetailFragmentArgs.fromBundle(it).android }
 
-        val viewModelFactory = DetailModelFactory(list, grid, card)
+
+        val viewModelFactory = DetailModelFactory(androidOs)
 
         detailViewModel = ViewModelProvider(this, viewModelFactory).get(DetailViewModel::class.java)
 

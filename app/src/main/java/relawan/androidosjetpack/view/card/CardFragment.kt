@@ -49,7 +49,7 @@ class CardFragment : Fragment() {
     private fun showRecyclerCardView() {
         val adapter = CardAndroidOsAdapter(context!!, CardAndroidOsAdapter.OnClickListener {
             Toast.makeText(context, it.name, Toast.LENGTH_LONG).show()
-            val action = CardFragmentDirections.actionCardFragmentToDetailFragment(null, null, it)
+            val action = CardFragmentDirections.actionCardFragmentToDetailFragment(it)
             findNavController().navigate(action)
         })
         rvCategory.layoutManager = LinearLayoutManager(context)

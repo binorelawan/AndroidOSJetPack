@@ -49,7 +49,7 @@ class GridFragment : Fragment() {
     private fun showRecyclerGrid() {
         val adapter = GridAndroidOsAdapter(GridAndroidOsAdapter.OnClickListener {
             Toast.makeText(context, it.name, Toast.LENGTH_LONG).show()
-            val action = GridFragmentDirections.actionGridFragmentToDetailFragment(null, it, null)
+            val action = GridFragmentDirections.actionGridFragmentToDetailFragment(it)
             findNavController().navigate(action)
         })
         rvCategory.layoutManager = GridLayoutManager(context, 2)

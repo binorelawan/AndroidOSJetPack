@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import relawan.androidosjetpack.model.AndroidOs
 
-class DetailViewModel(list: AndroidOs?, grid: AndroidOs?, card: AndroidOs?) : ViewModel(){
+class DetailViewModel(androidOs: AndroidOs?) : ViewModel(){
 
     private val _androidName = MutableLiveData<Int>()
     val androidName: LiveData<Int>
@@ -24,9 +24,9 @@ class DetailViewModel(list: AndroidOs?, grid: AndroidOs?, card: AndroidOs?) : Vi
         get() = _androidDetail
 
     init {
-        _androidName.value = list?.name ?: grid?.name ?: card?.name
-        _androidRemarks.value = list?.remarks ?: grid?.remarks ?: card?.remarks
-        _androidImage.value = list?.photo ?: grid?.photo ?: card?.photo
-        _androidDetail.value = list?.detail ?: grid?.detail ?: card?.detail
+        _androidName.value = androidOs?.name
+        _androidRemarks.value = androidOs?.remarks
+        _androidImage.value = androidOs?.photo
+        _androidDetail.value = androidOs?.detail
     }
 }

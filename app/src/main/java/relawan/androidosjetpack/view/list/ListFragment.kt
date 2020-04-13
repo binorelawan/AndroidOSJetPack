@@ -47,7 +47,7 @@ class ListFragment : Fragment() {
     private fun showRecyclerList() {
         val adapter = ListAndroidOsAdapter(context!!, ListAndroidOsAdapter.OnClickListener {
             Toast.makeText(context, it.name, Toast.LENGTH_LONG).show()
-            val action = ListFragmentDirections.actionListFragmentToDetailFragment(it, null, null)
+            val action = ListFragmentDirections.actionListFragmentToDetailFragment(it)
             findNavController().navigate(action)
         })
         rvCategory.layoutManager = LinearLayoutManager(context)
