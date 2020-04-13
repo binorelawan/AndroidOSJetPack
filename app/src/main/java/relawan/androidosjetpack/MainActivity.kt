@@ -39,22 +39,8 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        val navController = this.findNavController(R.id.nav_host_fragment)
-        navController.addOnDestinationChangedListener { _, destination, _ ->
-            when (destination.id) {
-                R.id.listFragment -> {
-                    menuInflater.inflate(R.menu.menu_main, menu)
-                }
-                R.id.gridFragment -> {
-                    menuInflater.inflate(R.menu.menu_main, menu)
-                }
-                R.id.cardFragment -> {
-                    menuInflater.inflate(R.menu.menu_main, menu)
-                }
-                else -> menu?.clear()
-            }
-        }
-        return true
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return super.onCreateOptionsMenu(menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
