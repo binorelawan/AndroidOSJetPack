@@ -45,14 +45,6 @@
         <argument
             android:name="android"
             app:argType="relawan.androidosjetpack.model.AndroidOs"/>
-<!--        <argument-->
-<!--            android:name="grid"-->
-<!--            app:argType="relawan.androidosjetpack.model.AndroidOs"-->
-<!--            app:nullable="true"/>-->
-<!--        <argument-->
-<!--            android:name="card"-->
-<!--            app:argType="relawan.androidosjetpack.model.AndroidOs"-->
-<!--            app:nullable="true"/>-->
     </fragment>
 
 </navigation>
