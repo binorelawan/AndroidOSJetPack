@@ -6,28 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-import relawan.androidosjetpack.R
 import relawan.androidosjetpack.adapter.CardAndroidOsAdapter
-import relawan.androidosjetpack.adapter.ListAndroidOsAdapter
 import relawan.androidosjetpack.databinding.FragmentCardBinding
 import relawan.androidosjetpack.model.AndroidOs
 import relawan.androidosjetpack.utils.AndroidOsData
-import relawan.androidosjetpack.view.list.ListFragmentDirections
-import relawan.androidosjetpack.viewmodel.HomeViewModel
 
 /**
  * A simple [Fragment] subclass.
  */
 class CardFragment : Fragment() {
 
-    private lateinit var cardViewModel: HomeViewModel
 
     private var list: ArrayList<AndroidOs> = arrayListOf()
 
@@ -45,21 +37,14 @@ class CardFragment : Fragment() {
 
         rvCategory = binding.rvCategory
 
-        cardViewModel = ViewModelProvider(this).get(HomeViewModel::class.java)
 
         list.addAll(AndroidOsData.getListData())
 
-        cardViewModel.modeCard.observe(viewLifecycleOwner, Observer {
-            setActionBarTitle(it)
-        })
         showRecyclerCardView()
 
         return binding.root
     }
 
-    private fun setActionBarTitle(title: String) {
-        (activity as AppCompatActivity).supportActionBar?.title = title
-    }
 
     private fun showRecyclerCardView() {
         val adapter = CardAndroidOsAdapter(context!!, CardAndroidOsAdapter.OnClickListener {
